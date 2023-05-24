@@ -7,4 +7,3 @@ RewriteRule ^(.*)$ https://www.prasiddhaacharya.com.np/$1 [L,R=301]
 RewriteCond %{home} !-d
 RewriteCond %{home}.html -f
 RewriteRule ^(.*)$ $1.html
-
