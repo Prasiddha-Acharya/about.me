@@ -1,6 +1,5 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^172\.67\.203\.197 [nc,or]
-RewriteCond %{HTTP_HOST} ^prasiddhaacharya\.com.np[nc] 
 RewriteRule (.*) http://www.prasiddhaacharya.com.np//$1 [R=301,L]
 RewriteCond %{home} !-d
 RewriteCond %{home}.html -f
