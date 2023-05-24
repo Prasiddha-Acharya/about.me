@@ -1,7 +1,10 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^172\.67\.203\.197 [nc,or]
-RewriteCond %{HTTP_HOST} ^prasiddhaacharya\.com.np[nc] 
-RewriteRule (.*) http://www.prasiddhaacharya.com.np//$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP:X-Forwarded-For} ^172\.67\.203\.197$  [OR]
+RewriteCond %{REMOTE_ADDR} ^104\.21\.22\.90$
+RewriteRule ^(.*)$ https://www.prasiddhaacharya.com.np/$1 [L,R=301]
 RewriteCond %{home} !-d
 RewriteCond %{home}.html -f
 RewriteRule ^(.*)$ $1.html
+
