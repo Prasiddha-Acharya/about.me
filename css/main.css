@@ -1961,4 +1961,7 @@ margin-left: -15px;
       min-width: 810px;
     }
   }
-  
+
+  .page-title .bg-orange, .masonry-box:hover .blog-meta span.bg-orange, .color-orange a {
+    background-color: #FF6347 !important;
+}
