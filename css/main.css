@@ -1117,13 +1117,26 @@ div.tab button:hover {
 }
 .h3-nepali {
     font-family: 'Mukta', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; 
-    font-size: 27px !important; text-indent: 0px;  line-height: 30px;
+    font-size: 32px !important; text-indent: 0px;  line-height: 30px;
  }
 
- .title-nepali {
-    font-family: 'Mukta', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; 
-    font-size: 50px !important; text-indent: 0px;  line-height: 60px !important;
- }
+ 
+ 
+  /* For mobile and small devices */
+@media (max-width: 767px) {
+    .title-nepali {
+        font-family: 'Mukta', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; 
+        font-size: 45px !important; text-indent: 0px;  line-height: 56px !important; 
+     }
+  }
+  
+  /* For PC and large devices */
+  @media (min-width: 768px) {
+    .title-nepali {
+        font-family: 'Mukta', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important; 
+        font-size: 55px !important; text-indent: 0px;  line-height: 61px !important;
+     }
+  }
 .pp .float-left {
     margin: 0 2rem 1rem -3rem;
 }
